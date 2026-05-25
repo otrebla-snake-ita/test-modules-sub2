@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "ConsoleApp1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ConsoleApp1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsoleApp1.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ConsoleApp1/1.0.0": {
+      "type": "project",
+      "path": "../../../test-modules-sub/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+      "msbuildProject": "../../../test-modules-sub/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "ConsoleApp1 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\AlbertoMarinucci\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-sub2\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+      "projectUniqueName": "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-main\\MainModulesProj\\test-modules-sub2\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
       "projectName": "ClassLibrary1",
-      "projectPath": "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-sub2\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+      "projectPath": "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-main\\MainModulesProj\\test-modules-sub2\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
       "packagesPath": "C:\\Users\\AlbertoMarinucci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-sub2\\ClassLibrary1\\ClassLibrary1\\obj\\",
+      "outputPath": "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-main\\MainModulesProj\\test-modules-sub2\\ClassLibrary1\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -41,7 +60,11 @@
         "net8.0": {
           "framework": "net8.0",
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-main\\MainModulesProj\\test-modules-sub\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+              "projectPath": "C:\\Users\\AlbertoMarinucci\\OneDrive - Insoore\\Desktop\\git submodules test\\test-modules-main\\MainModulesProj\\test-modules-sub\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

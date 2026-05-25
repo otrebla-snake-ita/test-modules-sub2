@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\test-modules-sub\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj" />
+  </ItemGroup>
+
 </Project>
